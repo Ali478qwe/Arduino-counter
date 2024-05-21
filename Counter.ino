@@ -11,7 +11,7 @@ int num_2 = 0;
 ////////////////////////////////////////////
 void setup() {
   start_time = millis();
-  Serial.begin(9600);
+  
 }
 
 void loop() {
@@ -20,7 +20,7 @@ void loop() {
   if (current_time - start_time >= period) {
     value += increment ;
     start_time = current_time;
-    Serial.println(current_time);
+    
     
   }
 //////////////////////////////////
